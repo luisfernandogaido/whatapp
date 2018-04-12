@@ -11,6 +11,7 @@ import (
 )
 
 func Zips(folder string) ([]string, error) {
+	//fixme zips não listam apenas arquivos do tipo zip.
 	fi, err := ioutil.ReadDir(folder)
 	if err != nil {
 		return nil, err
